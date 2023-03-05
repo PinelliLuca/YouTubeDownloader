@@ -30,6 +30,7 @@ def download():
 # Dimensioni generiche della finestra
 root.geometry("800x600+100+100")
 
+
 # Spazio di input di testo per il link del video
 link_label = tk.Label(root,height=2,text="Inserisci il link del video:", font=("Helvetica"))
 link_label.pack()
@@ -47,8 +48,11 @@ spacer = tk.Label(root, height=1)
 spacer.pack()
 
 # Bottone per avviare il download
-download_button = tk.Button(root,height=3, text="Download", font=("Helvetica"), command=download)
+download_button = tk.Button(root,height=3, text="Download", font=("Helvetica"), background="Orange", command=download)
 download_button.pack()
 
-
+# language
+Lang= tk.StringVar()
+check= tk.Checkbutton(root, height=15, text="Italiano", font="Arial", variable=Lang)
+check.pack()
 root.mainloop()
