@@ -37,7 +37,7 @@ link_entry = tk.Entry(root, width=50)
 link_entry.pack()
 
 # Spazio di input di testo per la cartella di destinazione
-destination_label = tk.Label(root,height=2, text="Inserisci la cartella di destinazione:", font=("Helvetica"))
+destination_label = tk.Label(root,height=2, text="Inserisci il percorso della cartella di destinazione:", font=("Helvetica"))
 destination_label.pack()
 destination_entry = tk.Entry(root, width=50)
 destination_entry.pack()
