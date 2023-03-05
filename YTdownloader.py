@@ -7,10 +7,24 @@ from tkinter import messagebox
 root = Tk()
 root.title("YouTube Downloader")
 
+# Creo file per ricordare il percorso della cartella di download
+def remember_file():
+    import os
+
+    # Controlla se il file "remember.txt" esiste già
+    if os.path.isfile("remember.txt"):
+        print("Il file 'remember.txt' esiste già.")
+    else:
+        # Crea il file "remember.txt"
+        with open("remember.txt", "w") as f:
+            f.write("Questo è il file di remember.")
+        print("Il file 'remember.txt' è stato creato con successo.")
 
 # Funzione per il download del video
 def download():
+    remember_file()
     try:
+
         # Ottieni il link dallo spazio di input di testo
         link = YouTube(link_entry.get())
 
@@ -27,6 +41,8 @@ def download():
     except:
         # Mostra un messaggio di errore se il download fallisce
         messagebox.showerror("Errore", "Si è verificato un errore durante il download del video.")
+
+
 
 # Dimensioni generiche della finestra
 root.geometry("800x600+100+100")
