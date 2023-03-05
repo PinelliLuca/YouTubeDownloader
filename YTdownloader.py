@@ -1,9 +1,10 @@
 import time
-import tkinter as tk
+
+from tkinter import *
 from pytube import YouTube
 from tkinter import messagebox
 
-root = tk.Tk()
+root = Tk()
 root.title("YouTube Downloader")
 
 
@@ -32,27 +33,28 @@ root.geometry("800x600+100+100")
 
 
 # Spazio di input di testo per il link del video
-link_label = tk.Label(root,height=2,text="Inserisci il link del video:", font=("Helvetica"))
+link_label = Label(root,height=2,text="Inserisci il link del video:", font=("Helvetica"))
 link_label.pack()
-link_entry = tk.Entry(root, width=50)
+link_entry = Entry(root, width=50)
 link_entry.pack()
 
 # Spazio di input di testo per la cartella di destinazione
-destination_label = tk.Label(root,height=2, text="Inserisci il percorso della cartella di destinazione:", font=("Helvetica"))
+destination_label = Label(root,height=2, text="Inserisci il percorso della cartella di destinazione:", font=("Helvetica"))
 destination_label.pack()
-destination_entry = tk.Entry(root, width=50)
+destination_entry = Entry(root, width=50)
 destination_entry.pack()
 
 # Aggiungi uno spaziatore verticale
-spacer = tk.Label(root, height=1)
-spacer.pack()
+spacer = Label(root, height=1).pack()
+
 
 # Bottone per avviare il download
-download_button = tk.Button(root,height=3, text="Download", font=("Helvetica"), background="Orange", command=download)
+download_button = Button(root,height=3, text="Download", font=("Helvetica"), background="Orange", command=download)
 download_button.pack()
 
 # language
-Lang= tk.StringVar()
-check= tk.Checkbutton(root, height=15, text="Italiano", font="Arial", variable=Lang)
-check.pack()
+lang= StringVar()
+lang_ita= Radiobutton(root, height=15, text="Italiano", value='ita', variable=lang, font="Arial").pack()
+lang_eng= Radiobutton(root, height=15, text="English", value='eng', variable=lang, font="Arial").pack()
+
 root.mainloop()
