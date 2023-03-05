@@ -54,7 +54,10 @@ download_button.pack()
 
 # language
 lang= StringVar()
-lang_ita= Radiobutton(root, height=15, text="Italiano", value='ita', variable=lang, font="Arial").pack()
-lang_eng= Radiobutton(root, height=15, text="English", value='eng', variable=lang, font="Arial").pack()
-
+r1= Radiobutton(root, text="Italiano", value="ita", variable=lang, font="Arial")
+r2= Radiobutton(root, text="English",value="eng", variable=lang, font="Arial")
+r1.pack()
+r1.select()
+r2.deselect()
+r2.pack()
 root.mainloop()
