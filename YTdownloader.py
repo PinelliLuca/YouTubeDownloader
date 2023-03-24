@@ -17,7 +17,7 @@ def remember_file():
     else:
         # Crea il file "remember.txt"
         with open("remember.txt", "w") as f:
-            f.write("Questo è il file di remember.")
+            f.write("Questo è il file di remember. ")
         print("Il file 'remember' è stato creato con successo.")
 
 # Funzione per il download del video
