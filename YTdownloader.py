@@ -25,7 +25,7 @@ def download():
     remember_file()
     try:
 
-        # Ottieni il link dallo spazio di input di testo
+        # Ottieni il link dallo spazio di input di testoo
         link = YouTube(link_entry.get())
 
         # Ottieni la cartella di destinazione dallo spazio di input di testo
