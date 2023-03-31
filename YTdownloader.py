@@ -28,7 +28,7 @@ def download():
         # Ottieni il link dallo spazio di input di testo
         link = YouTube(link_entry.get())
 
-        # Ottieni la cartella di destinazione dallo spazio di input di testo
+        # Ottieni la cartella di destinazione dallo spazio di input di testoo
         destination_folder = destination_entry.get()
 
         # Scarica il video nella cartella di destinazione
