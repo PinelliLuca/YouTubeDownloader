@@ -45,7 +45,7 @@ def download():
 
 
 # Dimensioni generiche della finestra
-root.geometry("800x600+100+100")
+root.geometry("800x600+100+200")
 
 
 # Spazio di input di testo per il link del video
