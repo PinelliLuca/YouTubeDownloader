@@ -40,7 +40,7 @@ def download():
 
     except:
         # Mostra un messaggio di errore se il download fallisce
-        messagebox.showerror("Errore ", " Si è verificato un errore durante il download del video.")
+        messagebox.showerror("Errore ", "Si è verificato un errore durante il download del video.")
 
 
 
