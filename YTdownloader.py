@@ -49,7 +49,7 @@ root.geometry("800x600+100+100")
 
 
 # Spazio di input di testo per il link del video
-link_label = Label(root,height=2,text="Inserisci il link del video: ", font=("Helvetica"))
+link_label = Label(root,height=2,text="Inserisci il link del video:", font=("Helvetica"))
 link_label.pack()
 link_entry = Entry(root, width=50)
 link_entry.pack()
