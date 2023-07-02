@@ -8,21 +8,22 @@ root = Tk()
 root.title("YouTube Downloader")
 
 # Creo file per ricordare il percorso della cartella di download
-def remember_file():
-    import os
+#def remember_file():
+#   import os
 
-    # Controlla se il file "remember.txt" esiste già
-    if os.path.isfile("remember.txt"):
-        print("Il file 'remember.txt' esiste già.")
-    else:
-        # Crea il file "remember.txt"
-        with open("remember.txt", "w") as f:
-            f.write("Questo è il file di remember. ")
-        print("Il file 'remember' è stato creato con successo.")
+# Controlla se il file "remember.txt" esiste già
+#  if os.path.isfile("remember.txt"):
+print("Il file 'remember.txt' esiste già.")
+# else:
+# Crea il file "remember.txt"
+#    with open("remember.txt", "w") as f:
+#       f.write("Questo è il file di remember. ")
+#  print("Il file 'remember' è stato creato con successo.")
+
 
 # Funzione per il download del video
 def download():
-    remember_file()
+    #   remember_file()
     try:
 
         # Ottieni il link dallo spazio di input di testo
