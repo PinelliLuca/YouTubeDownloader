@@ -37,7 +37,7 @@ def download():
         video.download(destination_folder)
 
         # Mostra il messaggio di conferma del download
-        messagebox.showinfo("Downloadcompletato", "Il video è stato scaricato con successo!")
+        messagebox.showinfo("Download completato", "Il video è stato scaricato con successo!")
 
     except:
         # Mostra un messaggio di errore se il download fallisce
